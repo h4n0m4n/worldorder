@@ -109,7 +109,7 @@ def build_turn_prompt(
     world_summary: str,
     memory_context: str = "",
 ) -> str:
-    events_text = "\n".join(f"  - {e}" for e in recent_events) if recent_events else "  (no major events)"
+    events_text = "\n".join(f"  - {e}" for e in recent_events[-5:]) if recent_events else "  (no major events)"
 
     prompt = f"""YEAR: {year} | TURN: {turn}
 
@@ -126,9 +126,10 @@ WORLD SITUATION:
     return prompt
 
 
-def build_world_summary(countries: list[CountryState]) -> str:
+def build_world_summary(countries: list[CountryState], max_countries: int = 15) -> str:
     lines = ["GLOBAL POWER RANKINGS:"]
-    for i, c in enumerate(sorted(countries, key=lambda x: x.composite_power, reverse=True), 1):
+    ranked = sorted(countries, key=lambda x: x.composite_power, reverse=True)[:max_countries]
+    for i, c in enumerate(ranked, 1):
         status = []
         if c.economy.gdp_growth < 0:
             status.append("RECESSION")

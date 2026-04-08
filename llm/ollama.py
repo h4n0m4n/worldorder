@@ -40,12 +40,28 @@ class OllamaProvider(LLMProvider):
         self, prompt: str, schema: dict[str, Any], system: str = ""
     ) -> dict[str, Any]:
         schema_hint = (
-            "You MUST respond with valid JSON matching this schema. "
-            "No markdown, no explanation, ONLY the JSON object.\n\n"
-            f"Schema: {schema}"
+            "Respond ONLY with a valid JSON object. No markdown fences, no explanation.\n"
+            "Required keys: inner_thoughts (string), public_statement (string), "
+            "actions (array of {type, target, detail, intensity}), mood (string).\n"
+            "Example: {\"inner_thoughts\":\"...\",\"public_statement\":\"...\","
+            "\"actions\":[{\"type\":\"diplomacy\",\"target\":\"US\",\"detail\":\"...\",\"intensity\":0.5}],"
+            "\"mood\":\"confident\"}"
         )
         full_system = f"{system}\n\n{schema_hint}" if system else schema_hint
-        raw = await self.generate(prompt, system=full_system)
+
+        payload: dict[str, Any] = {
+            "model": self.model,
+            "prompt": prompt,
+            "system": full_system,
+            "stream": False,
+            "format": "json",
+        }
+
+        async with httpx.AsyncClient(timeout=self.timeout) as client:
+            resp = await client.post(f"{self.base_url}/api/generate", json=payload)
+            resp.raise_for_status()
+            raw = resp.json()["response"]
+
         return self._extract_json(raw)
 
     async def health_check(self) -> bool:

@@ -102,7 +102,10 @@ class Simulation:
 
         turn_decisions: dict[str, Any] = {}
 
-        for country in self.world.all_countries():
+        # Only top N countries get full AI decisions (performance + cost)
+        top_countries = self.world.ranked_by_power()[:20]
+
+        for country in top_countries:
             if not country.leader_id:
                 continue
 
@@ -112,7 +115,30 @@ class Simulation:
             ):
                 continue  # player decides via CLI
 
+            # Try YAML profile first, then build from leader_system data
             profile = self.leader_profiles.get(country.leader_id)
+            if not profile and self.leader_system:
+                leader_term = self.leader_system.get_leader(country.code)
+                if leader_term:
+                    profile = {
+                        "id": leader_term.leader_id,
+                        "name": leader_term.name,
+                        "country": country.code,
+                        "title": leader_term.title,
+                        "personality": {
+                            "traits": leader_term.traits,
+                            "ideology": leader_term.ideology,
+                            "risk_tolerance": leader_term.risk_tolerance,
+                            "communication_style": "Direct and strategic.",
+                        },
+                        "decision_framework": {
+                            "priorities": ["national_security", "economic_growth", "stability"],
+                            "red_lines": ["territorial_integrity"],
+                            "negotiation_style": "Pragmatic",
+                        },
+                        "worldview": {"key_beliefs": ["National interest first"]},
+                    }
+
             if not profile:
                 continue
 
@@ -130,7 +156,7 @@ class Simulation:
                     "inner_thoughts": f"[AI Error: {e}]",
                     "public_statement": "No comment at this time.",
                     "actions": [{"type": "no_action", "target": "global", "detail": "Waiting"}],
-                    "mood": "cautious",
+                    "mood": "anxious",
                 }
 
             turn_decisions[country.code] = decision
