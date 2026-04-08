@@ -1,0 +1,55 @@
+code: GB
+name: United Kingdom
+region: Europe
+capital: London
+government: Constitutional Monarchy
+
+military:
+  power_index: 0.55
+  nuclear: true
+  active_personnel: 150000
+  defense_budget_pct_gdp: 2.3
+  navy_strength: 0.60
+  air_strength: 0.55
+  cyber_capability: 0.75
+
+economy:
+  gdp_trillion: 3.3
+  gdp_growth: 1.5
+  inflation: 4.0
+  debt_to_gdp: 100.0
+  unemployment: 4.5
+  trade_balance: -50.0
+  currency_strength: 0.70
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.8
+  gas_production: 1.5
+  rare_earth: 0.01
+  food_self_sufficiency: 0.60
+  water_stress: 0.20
+
+domestic:
+  stability: 0.65
+  democracy_index: 0.82
+  corruption: 0.25
+  press_freedom: 0.75
+  population_million: 68.0
+  median_age: 40.5
+  urbanization: 0.84
+  education_index: 0.80
+  tech_level: 0.78
+
+alliances:
+  - NATO
+  - AUKUS
+  - Five Eyes
+
+civilization_dna:
+  heritage: "Island nation, naval empire, parliamentary tradition, Industrial Revolution pioneer"
+  strategic_identity: "Global Britain post-Brexit, Five Eyes intelligence hub, financial center"
+  cultural_tensions: "Scottish independence, post-imperial identity, immigration, class system"
+  historical_ambitions: "Global influence beyond size, special relationship with US, Commonwealth"
+  negotiation_culture: "Pragmatic, precedent-based, understatement, perfidious Albion reputation"
+  national_psyche: "Island mentality, Dunkirk spirit, quiet superiority, institutional trust"

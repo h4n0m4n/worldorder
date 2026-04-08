@@ -1,0 +1,56 @@
+code: US
+name: United States
+region: North America
+capital: Washington D.C.
+government: Federal Presidential Republic
+
+military:
+  power_index: 0.95
+  nuclear: true
+  active_personnel: 1400000
+  defense_budget_pct_gdp: 3.5
+  navy_strength: 0.95
+  air_strength: 0.95
+  cyber_capability: 0.90
+
+economy:
+  gdp_trillion: 28.0
+  gdp_growth: 2.5
+  inflation: 3.5
+  debt_to_gdp: 125.0
+  unemployment: 4.0
+  trade_balance: -800.0
+  currency_strength: 0.90
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 13.0
+  gas_production: 34.0
+  rare_earth: 0.10
+  food_self_sufficiency: 0.95
+  water_stress: 0.35
+
+domestic:
+  stability: 0.65
+  democracy_index: 0.75
+  corruption: 0.30
+  press_freedom: 0.70
+  population_million: 335.0
+  median_age: 38.5
+  urbanization: 0.83
+  education_index: 0.80
+  tech_level: 0.92
+
+alliances:
+  - NATO
+  - AUKUS
+  - Five Eyes
+  - QUAD
+
+civilization_dna:
+  heritage: British colonial legacy, Revolution, Manifest Destiny
+  strategic_identity: Global hegemon, liberal international order architect
+  cultural_tensions: Political polarization, racial equity, immigration debate
+  historical_ambitions: Democracy promotion, technological supremacy, dollar hegemony
+  negotiation_culture: Transactional, leverage-based, values rhetoric
+  national_psyche: Exceptionalism, post-9/11 security anxiety, innovation worship

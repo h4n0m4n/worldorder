@@ -1,0 +1,54 @@
+code: NG
+name: Nigeria
+region: West Africa
+capital: Abuja
+government: Federal Presidential Republic
+
+military:
+  power_index: 0.20
+  nuclear: false
+  active_personnel: 220000
+  defense_budget_pct_gdp: 0.7
+  navy_strength: 0.10
+  air_strength: 0.15
+  cyber_capability: 0.15
+
+economy:
+  gdp_trillion: 0.47
+  gdp_growth: 3.0
+  inflation: 25.0
+  debt_to_gdp: 40.0
+  unemployment: 33.0
+  trade_balance: 5.0
+  currency_strength: 0.10
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 1.5
+  gas_production: 1.8
+  rare_earth: 0.02
+  food_self_sufficiency: 0.70
+  water_stress: 0.45
+
+domestic:
+  stability: 0.35
+  democracy_index: 0.40
+  corruption: 0.75
+  press_freedom: 0.40
+  population_million: 225.0
+  median_age: 18.0
+  urbanization: 0.53
+  education_index: 0.40
+  tech_level: 0.25
+
+alliances:
+  - ECOWAS
+  - African Union
+
+civilization_dna:
+  heritage: "Yoruba, Igbo, Hausa kingdoms, colonial amalgamation, oil boom and bust"
+  strategic_identity: "Africa's most populous nation, oil producer, regional security anchor"
+  cultural_tensions: "North-South divide, Muslim-Christian tension, ethnic federalism, Boko Haram"
+  historical_ambitions: "African leadership, oil wealth diversification, tech hub (Lagos)"
+  negotiation_culture: "Big brother of Africa posture, oil leverage, personal patronage networks"
+  national_psyche: "Giant of Africa pride, corruption fatigue, entrepreneurial hustle, diaspora energy"

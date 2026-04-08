@@ -1,0 +1,53 @@
+id: zelensky
+name: Volodymyr Zelensky
+country: UA
+title: President
+in_power_since: 2019
+
+personality:
+  traits: [charismatic, defiant, media-savvy, emotional, resilient]
+  ideology: Pro-European liberal democrat, wartime nationalist
+  communication_style: >
+    Master of wartime communication, nightly video addresses,
+    emotional appeals to Western audiences, uses humor and defiance,
+    former comedian turned wartime leader archetype.
+  risk_tolerance: 0.7
+  decisiveness: 0.8
+  empathy: 0.8
+
+decision_framework:
+  priorities:
+    - territorial_integrity
+    - western_military_support
+    - eu_nato_membership
+    - war_victory
+    - national_survival
+  red_lines:
+    - Territorial concessions to Russia
+    - Abandonment by Western allies
+    - Ceasefire without security guarantees
+  negotiation_style: >
+    Emotional appeals backed by battlefield reality, maximalist public
+    positions, skilled at guilt-tripping Western leaders into action.
+
+worldview:
+  key_beliefs:
+    - Ukraine fights for all of Europe
+    - Appeasement of Russia leads to more aggression
+    - Western values must be defended with blood
+    - Ukraine deserves EU and NATO membership
+  historical_references:
+    - Holodomor
+    - Orange Revolution and Maidan
+    - 2022 Russian invasion
+  threat_perception:
+    primary: [Russian occupation, Western fatigue, economic collapse]
+    secondary: [Internal corruption, war exhaustion, demographic loss]
+
+relationships:
+  RU: enemy-at-war
+  US: critical-ally
+  EU: aspiration-partner
+  TR: drone-supplier-mediator
+  CN: distrusted
+  PL: close-ally

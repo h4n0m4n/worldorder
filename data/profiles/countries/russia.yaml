@@ -1,0 +1,55 @@
+code: RU
+name: Russia
+region: Eurasia
+capital: Moscow
+government: Federal Semi-Presidential Republic (de facto authoritarian)
+
+military:
+  power_index: 0.80
+  nuclear: true
+  active_personnel: 1150000
+  defense_budget_pct_gdp: 5.5
+  navy_strength: 0.55
+  air_strength: 0.70
+  cyber_capability: 0.80
+
+economy:
+  gdp_trillion: 2.0
+  gdp_growth: 1.0
+  inflation: 8.0
+  debt_to_gdp: 20.0
+  unemployment: 3.5
+  trade_balance: 100.0
+  currency_strength: 0.30
+  sanctions_pressure: 0.70
+
+resources:
+  oil_production: 10.5
+  gas_production: 22.0
+  rare_earth: 0.15
+  food_self_sufficiency: 0.90
+  water_stress: 0.15
+
+domestic:
+  stability: 0.60
+  democracy_index: 0.20
+  corruption: 0.70
+  press_freedom: 0.15
+  population_million: 144.0
+  median_age: 40.0
+  urbanization: 0.75
+  education_index: 0.72
+  tech_level: 0.60
+
+alliances:
+  - CSTO
+  - SCO
+  - BRICS
+
+civilization_dna:
+  heritage: Kievan Rus, Mongol yoke, Tsarist Empire, Soviet superpower
+  strategic_identity: Eurasian land power, energy superpower, nuclear parity with US
+  cultural_tensions: Imperial nostalgia vs. modernization, ethnic republics
+  historical_ambitions: Near-abroad dominance, multipolar world order, warm-water ports
+  negotiation_culture: Maximalist opening, strategic patience, escalate to de-escalate
+  national_psyche: Siege mentality, Great Power status obsession, WW2 sacred memory

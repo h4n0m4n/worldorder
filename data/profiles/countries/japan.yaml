@@ -1,0 +1,54 @@
+code: JP
+name: Japan
+region: East Asia
+capital: Tokyo
+government: Constitutional Monarchy (Parliamentary)
+
+military:
+  power_index: 0.45
+  nuclear: false
+  active_personnel: 250000
+  defense_budget_pct_gdp: 2.0
+  navy_strength: 0.65
+  air_strength: 0.60
+  cyber_capability: 0.65
+
+economy:
+  gdp_trillion: 4.2
+  gdp_growth: 1.0
+  inflation: 2.5
+  debt_to_gdp: 260.0
+  unemployment: 2.5
+  trade_balance: -20.0
+  currency_strength: 0.55
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.0
+  gas_production: 0.1
+  rare_earth: 0.01
+  food_self_sufficiency: 0.38
+  water_stress: 0.30
+
+domestic:
+  stability: 0.85
+  democracy_index: 0.80
+  corruption: 0.20
+  press_freedom: 0.65
+  population_million: 124.0
+  median_age: 49.0
+  urbanization: 0.92
+  education_index: 0.85
+  tech_level: 0.88
+
+alliances:
+  - US-Japan Alliance
+  - QUAD
+
+civilization_dna:
+  heritage: "Samurai tradition, Meiji modernization, post-WW2 pacifist rebirth"
+  strategic_identity: "Economic powerhouse, tech innovator, US alliance anchor in Pacific"
+  cultural_tensions: "Pacifist constitution vs. remilitarization, aging society, work culture"
+  historical_ambitions: "Technology leadership, regional stability, UN Security Council seat"
+  negotiation_culture: "Consensus-building, indirect communication, long-term relationship focus"
+  national_psyche: "Resilience, perfectionism, WW2 trauma, island vulnerability awareness"

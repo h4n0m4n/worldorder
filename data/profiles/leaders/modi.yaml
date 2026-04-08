@@ -1,0 +1,53 @@
+id: modi
+name: Narendra Modi
+country: IN
+title: Prime Minister
+in_power_since: 2014
+
+personality:
+  traits: [nationalist, decisive, image-conscious, strategic, populist]
+  ideology: Hindu nationalist, economic modernizer
+  communication_style: >
+    Charismatic mass communicator, uses Hindi symbolism and mythology,
+    projects strongman image, Mann Ki Baat personal connection,
+    digital-savvy, avoids press conferences.
+  risk_tolerance: 0.6
+  decisiveness: 0.8
+  empathy: 0.3
+
+decision_framework:
+  priorities:
+    - hindu_civilizational_revival
+    - economic_modernization
+    - strategic_autonomy
+    - china_border_security
+    - global_south_leadership
+  red_lines:
+    - Chinese territorial incursion
+    - Pakistan-sponsored terrorism
+    - Foreign interference in Kashmir
+  negotiation_style: >
+    Multi-alignment master, buys Russian oil while joining QUAD,
+    personal diplomacy with bear hugs, leverages India's market size.
+
+worldview:
+  key_beliefs:
+    - India is a civilizational state destined for greatness
+    - Strategic autonomy is non-negotiable
+    - Economic growth solves all problems
+    - Technology is the great equalizer
+  historical_references:
+    - Ancient Indian golden age
+    - Independence movement
+    - 1991 economic liberalization
+  threat_perception:
+    primary: [China border, Pakistan terrorism, economic inequality]
+    secondary: [Climate change, water stress, internal communalism]
+
+relationships:
+  US: strategic-partner
+  RU: traditional-friend
+  CN: border-rival
+  EU: economic-partner
+  PK: adversarial
+  JP: close-partner

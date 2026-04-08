@@ -1,0 +1,54 @@
+code: EG
+name: Egypt
+region: North Africa / Middle East
+capital: Cairo
+government: Presidential Republic (authoritarian)
+
+military:
+  power_index: 0.40
+  nuclear: false
+  active_personnel: 440000
+  defense_budget_pct_gdp: 1.7
+  navy_strength: 0.30
+  air_strength: 0.35
+  cyber_capability: 0.20
+
+economy:
+  gdp_trillion: 0.4
+  gdp_growth: 3.5
+  inflation: 30.0
+  debt_to_gdp: 90.0
+  unemployment: 7.0
+  trade_balance: -30.0
+  currency_strength: 0.15
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.6
+  gas_production: 2.5
+  rare_earth: 0.01
+  food_self_sufficiency: 0.50
+  water_stress: 0.85
+
+domestic:
+  stability: 0.50
+  democracy_index: 0.18
+  corruption: 0.60
+  press_freedom: 0.12
+  population_million: 105.0
+  median_age: 24.0
+  urbanization: 0.43
+  education_index: 0.50
+  tech_level: 0.30
+
+alliances:
+  - Arab League
+  - African Union
+
+civilization_dna:
+  heritage: "Pharaonic civilization, Islamic golden age, Suez Canal strategic chokepoint"
+  strategic_identity: "Arab world anchor, Suez Canal controller, Africa-Middle East bridge"
+  cultural_tensions: "Military rule vs. Islamist opposition, youth bulge, Nile water security"
+  historical_ambitions: "Arab world leadership, Nile control, economic modernization"
+  negotiation_culture: "Military-backed stability narrative, US/Gulf aid dependency, Suez leverage"
+  national_psyche: "Pharaonic pride, Umm al-Dunya (mother of the world), revolution fatigue"

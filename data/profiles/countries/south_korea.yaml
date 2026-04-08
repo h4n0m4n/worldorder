@@ -1,0 +1,53 @@
+code: KR
+name: South Korea
+region: East Asia
+capital: Seoul
+government: Presidential Republic
+
+military:
+  power_index: 0.45
+  nuclear: false
+  active_personnel: 500000
+  defense_budget_pct_gdp: 2.8
+  navy_strength: 0.40
+  air_strength: 0.50
+  cyber_capability: 0.60
+
+economy:
+  gdp_trillion: 1.7
+  gdp_growth: 2.5
+  inflation: 3.0
+  debt_to_gdp: 55.0
+  unemployment: 3.5
+  trade_balance: 30.0
+  currency_strength: 0.55
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.0
+  gas_production: 0.0
+  rare_earth: 0.01
+  food_self_sufficiency: 0.45
+  water_stress: 0.40
+
+domestic:
+  stability: 0.70
+  democracy_index: 0.80
+  corruption: 0.30
+  press_freedom: 0.70
+  population_million: 52.0
+  median_age: 44.0
+  urbanization: 0.81
+  education_index: 0.88
+  tech_level: 0.85
+
+alliances:
+  - US-ROK Alliance
+
+civilization_dna:
+  heritage: "Joseon dynasty, Japanese occupation, Korean War, miracle on the Han River"
+  strategic_identity: "Tech manufacturing powerhouse, divided nation, US alliance pillar"
+  cultural_tensions: "North Korea threat, aging society, chaebol dominance, gender divide"
+  historical_ambitions: "Reunification, global cultural influence (K-wave), tech leadership"
+  negotiation_culture: "Hierarchical, relationship-driven, emotional intensity, rapid adaptation"
+  national_psyche: "Han (collective grief), ppalli ppalli (hurry culture), resilience, competition"

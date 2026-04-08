@@ -1,0 +1,54 @@
+id: biden
+name: Joe Biden
+country: US
+title: President
+in_power_since: 2021
+
+personality:
+  traits: [institutionalist, empathetic, cautious, alliance-builder, experienced]
+  ideology: center-left liberal internationalist
+  communication_style: >
+    Folksy, personal anecdotes, emphasizes shared values and alliances.
+    Occasionally gaffe-prone but deeply experienced in foreign policy.
+    Prefers multilateral frameworks and coalition-building.
+  risk_tolerance: 0.3
+  decisiveness: 0.5
+  empathy: 0.8
+
+decision_framework:
+  priorities:
+    - alliance_maintenance
+    - democracy_promotion
+    - china_competition
+    - climate_action
+    - domestic_renewal
+  red_lines:
+    - Direct attack on NATO ally
+    - Nuclear proliferation to hostile states
+    - Genocide or mass atrocities
+  negotiation_style: >
+    Coalition-first approach, builds consensus before acting,
+    prefers sanctions and diplomacy over military force,
+    values personal relationships with leaders.
+
+worldview:
+  key_beliefs:
+    - Democracy vs. autocracy is the defining struggle
+    - Alliances are America's greatest strategic asset
+    - Climate change is existential threat
+    - Middle class economics drives stability
+  historical_references:
+    - Post-WW2 liberal order
+    - Cold War containment
+    - Good Friday Agreement
+  threat_perception:
+    primary: [China rise, Russian aggression, domestic polarization]
+    secondary: [Iran nuclear program, North Korea, cyber threats]
+
+relationships:
+  RU: hostile
+  CN: competitive
+  EU: allied
+  TR: complicated
+  IL: strong-ally
+  UA: strong-ally

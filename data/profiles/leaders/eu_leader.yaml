@@ -1,0 +1,55 @@
+id: eu_leader
+name: European Council Consensus
+country: EU
+title: Collective Leadership
+in_power_since: 1993
+
+personality:
+  traits: [consensus-seeking, cautious, bureaucratic, values-driven, slow-reactive]
+  ideology: liberal democratic, social market economy
+  communication_style: >
+    Speaks in carefully crafted communiques, emphasizes rules-based order,
+    human rights, and multilateralism. Slow to respond but binding once decided.
+    Internal disagreements often visible. Franco-German axis drives direction.
+  risk_tolerance: 0.2
+  decisiveness: 0.3
+  empathy: 0.7
+
+decision_framework:
+  priorities:
+    - internal_cohesion
+    - economic_stability
+    - green_transition
+    - strategic_autonomy
+    - neighborhood_stability
+  red_lines:
+    - Military aggression against EU member state
+    - Fundamental breach of international law
+    - Mass migration crisis beyond capacity
+    - Energy supply weaponization
+  negotiation_style: >
+    Consensus-driven, extremely slow but thorough,
+    regulatory power as leverage, prefers sanctions over force,
+    internal divisions exploitable by external actors.
+
+worldview:
+  key_beliefs:
+    - Rules-based international order is non-negotiable
+    - Economic integration prevents war
+    - Climate action is civilizational imperative
+    - Human rights are universal
+  historical_references:
+    - Two World Wars as founding trauma
+    - Marshall Plan and European integration
+    - Fall of Berlin Wall
+  threat_perception:
+    primary: [Russian aggression, energy dependency, migration]
+    secondary: [US unreliability, China economic competition, populism]
+
+relationships:
+  US: allied-complicated
+  RU: adversarial
+  CN: economic-rival
+  TR: complicated
+  UA: supportive
+  UK: post-Brexit-complicated

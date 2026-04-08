@@ -1,0 +1,53 @@
+code: KP
+name: North Korea
+region: East Asia
+capital: Pyongyang
+government: One-Party Totalitarian State
+
+military:
+  power_index: 0.35
+  nuclear: true
+  active_personnel: 1200000
+  defense_budget_pct_gdp: 25.0
+  navy_strength: 0.15
+  air_strength: 0.15
+  cyber_capability: 0.45
+
+economy:
+  gdp_trillion: 0.03
+  gdp_growth: -1.0
+  inflation: 15.0
+  debt_to_gdp: 10.0
+  unemployment: 25.0
+  trade_balance: -2.0
+  currency_strength: 0.05
+  sanctions_pressure: 0.95
+
+resources:
+  oil_production: 0.0
+  gas_production: 0.0
+  rare_earth: 0.10
+  food_self_sufficiency: 0.50
+  water_stress: 0.40
+
+domestic:
+  stability: 0.80
+  democracy_index: 0.02
+  corruption: 0.85
+  press_freedom: 0.01
+  population_million: 26.0
+  median_age: 35.0
+  urbanization: 0.63
+  education_index: 0.40
+  tech_level: 0.25
+
+alliances:
+  - China (informal)
+
+civilization_dna:
+  heritage: "Korean civilization, Juche ideology, Kim dynasty cult, guerrilla tradition"
+  strategic_identity: "Nuclear-armed hermit kingdom, asymmetric warfare specialist"
+  cultural_tensions: "Total state control, information blackout, elite vs. masses"
+  historical_ambitions: "Regime survival, Korean reunification under DPRK, nuclear deterrence"
+  negotiation_culture: "Brinkmanship, provocate-then-negotiate cycle, maximalist demands"
+  national_psyche: "Siege mentality, self-reliance mythology, Kim cult devotion, military-first"

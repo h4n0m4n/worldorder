@@ -1,0 +1,54 @@
+code: SA
+name: Saudi Arabia
+region: Middle East
+capital: Riyadh
+government: Absolute Monarchy
+
+military:
+  power_index: 0.40
+  nuclear: false
+  active_personnel: 230000
+  defense_budget_pct_gdp: 6.0
+  navy_strength: 0.25
+  air_strength: 0.45
+  cyber_capability: 0.30
+
+economy:
+  gdp_trillion: 1.1
+  gdp_growth: 3.5
+  inflation: 2.5
+  debt_to_gdp: 25.0
+  unemployment: 11.0
+  trade_balance: 150.0
+  currency_strength: 0.75
+  sanctions_pressure: 0.05
+
+resources:
+  oil_production: 10.5
+  gas_production: 4.0
+  rare_earth: 0.02
+  food_self_sufficiency: 0.30
+  water_stress: 0.85
+
+domestic:
+  stability: 0.70
+  democracy_index: 0.08
+  corruption: 0.50
+  press_freedom: 0.10
+  population_million: 36.0
+  median_age: 31.0
+  urbanization: 0.84
+  education_index: 0.55
+  tech_level: 0.45
+
+alliances:
+  - GCC
+  - OPEC+
+
+civilization_dna:
+  heritage: "Birthplace of Islam, Bedouin tribal tradition, oil wealth transformation"
+  strategic_identity: "Energy superpower, custodian of holy cities, OPEC leader"
+  cultural_tensions: "Modernization vs. Wahhabi conservatism, youth bulge, Vision 2030"
+  historical_ambitions: "Regional hegemon, post-oil economy, Islamic world leadership"
+  negotiation_culture: "Petrodollar leverage, tribal honor codes, personal royal relationships"
+  national_psyche: "Religious custodianship pride, oil-era entitlement, Iran rivalry obsession"

@@ -1,0 +1,134 @@
+{
+  "eras": {
+    "ancient": {
+      "events": [
+        {"year": -3000, "title": "Rise of Egyptian Civilization", "countries": ["EG"], "category": "political"},
+        {"year": -2000, "title": "Babylonian Empire Established", "countries": [], "category": "political"},
+        {"year": -500, "title": "Persian Empire at Peak", "countries": ["IR"], "category": "military"},
+        {"year": -334, "title": "Alexander's Conquests Begin", "countries": [], "category": "military"},
+        {"year": -27, "title": "Roman Empire Founded", "countries": [], "category": "political"},
+        {"year": 476, "title": "Fall of Western Roman Empire", "countries": [], "category": "political"}
+      ]
+    },
+    "medieval": {
+      "events": [
+        {"year": 622, "title": "Rise of Islam", "countries": ["SA"], "category": "cultural"},
+        {"year": 800, "title": "Charlemagne Crowned Emperor", "countries": ["FR", "DE"], "category": "political"},
+        {"year": 1071, "title": "Battle of Manzikert - Seljuk Turks Enter Anatolia", "countries": ["TR"], "category": "military"},
+        {"year": 1206, "title": "Mongol Empire Founded by Genghis Khan", "countries": ["CN"], "category": "military"},
+        {"year": 1299, "title": "Ottoman Empire Founded", "countries": ["TR"], "category": "political"},
+        {"year": 1453, "title": "Fall of Constantinople", "countries": ["TR"], "category": "military"}
+      ]
+    },
+    "early_modern": {
+      "events": [
+        {"year": 1492, "title": "Columbus Reaches Americas", "countries": ["US"], "category": "technological"},
+        {"year": 1526, "title": "Mughal Empire Founded in India", "countries": ["IN", "PK"], "category": "political"},
+        {"year": 1588, "title": "Spanish Armada Defeated by England", "countries": ["GB"], "category": "military"},
+        {"year": 1648, "title": "Peace of Westphalia - Modern State System Born", "countries": ["DE", "FR"], "category": "diplomatic"},
+        {"year": 1776, "title": "American Declaration of Independence", "countries": ["US", "GB"], "category": "political"},
+        {"year": 1789, "title": "French Revolution", "countries": ["FR"], "category": "political"}
+      ]
+    },
+    "modern": {
+      "events": [
+        {"year": 1815, "title": "Congress of Vienna - European Balance of Power", "countries": ["GB", "FR", "RU", "DE"], "category": "diplomatic"},
+        {"year": 1839, "title": "First Opium War - Century of Humiliation Begins", "countries": ["CN", "GB"], "category": "military"},
+        {"year": 1861, "title": "American Civil War", "countries": ["US"], "category": "military"},
+        {"year": 1868, "title": "Meiji Restoration in Japan", "countries": ["JP"], "category": "political"},
+        {"year": 1914, "title": "World War I Begins", "countries": ["GB", "FR", "DE", "RU", "TR"], "category": "military"},
+        {"year": 1917, "title": "Russian Revolution", "countries": ["RU"], "category": "political"},
+        {"year": 1918, "title": "Ottoman Empire Collapses", "countries": ["TR"], "category": "political"},
+        {"year": 1923, "title": "Republic of Turkey Founded", "countries": ["TR"], "category": "political"},
+        {"year": 1929, "title": "Great Depression", "countries": ["US"], "category": "economic"},
+        {"year": 1939, "title": "World War II Begins", "countries": ["DE", "GB", "FR", "RU", "US", "JP", "CN"], "category": "military"},
+        {"year": 1945, "title": "Atomic Bombs on Japan / UN Founded", "countries": ["US", "JP"], "category": "military"},
+        {"year": 1947, "title": "India-Pakistan Partition", "countries": ["IN", "PK", "GB"], "category": "political"},
+        {"year": 1948, "title": "Israel Founded", "countries": ["IL", "EG"], "category": "political"},
+        {"year": 1949, "title": "People's Republic of China Founded", "countries": ["CN"], "category": "political"},
+        {"year": 1950, "title": "Korean War", "countries": ["KR", "KP", "US", "CN"], "category": "military"},
+        {"year": 1962, "title": "Cuban Missile Crisis", "countries": ["US", "RU"], "category": "military"},
+        {"year": 1973, "title": "Oil Crisis / Yom Kippur War", "countries": ["IL", "EG", "SA"], "category": "economic"},
+        {"year": 1979, "title": "Iranian Revolution", "countries": ["IR"], "category": "political"},
+        {"year": 1989, "title": "Fall of Berlin Wall", "countries": ["DE", "RU"], "category": "political"},
+        {"year": 1991, "title": "Soviet Union Collapses", "countries": ["RU", "UA"], "category": "political"}
+      ]
+    },
+    "contemporary": {
+      "events": [
+        {"year": 2001, "title": "9/11 Attacks and War on Terror", "countries": ["US"], "category": "military"},
+        {"year": 2003, "title": "Iraq War", "countries": ["US", "GB", "IR"], "category": "military"},
+        {"year": 2008, "title": "Global Financial Crisis", "countries": ["US", "EU"], "category": "economic"},
+        {"year": 2010, "title": "Arab Spring", "countries": ["EG", "TR", "SA"], "category": "political"},
+        {"year": 2014, "title": "Russia Annexes Crimea", "countries": ["RU", "UA"], "category": "military"},
+        {"year": 2015, "title": "Iran Nuclear Deal (JCPOA)", "countries": ["IR", "US", "EU"], "category": "diplomatic"},
+        {"year": 2016, "title": "Brexit Referendum", "countries": ["GB", "EU"], "category": "political"},
+        {"year": 2020, "title": "COVID-19 Pandemic", "countries": ["CN", "US", "EU"], "category": "social"},
+        {"year": 2022, "title": "Russia Invades Ukraine", "countries": ["RU", "UA", "EU", "US"], "category": "military"},
+        {"year": 2023, "title": "Israel-Hamas War", "countries": ["IL", "IR", "EG", "TR"], "category": "military"},
+        {"year": 2024, "title": "Global AI Race Intensifies", "countries": ["US", "CN", "EU"], "category": "technological"}
+      ]
+    }
+  },
+  "scenario_templates": [
+    {
+      "id": "taiwan_crisis",
+      "title": "Taiwan Strait Crisis",
+      "description": "China moves to reunify Taiwan by force, triggering global response.",
+      "start_year": 2026,
+      "key_countries": ["CN", "US", "JP", "AU", "KR"],
+      "initial_events": [
+        {"title": "China Announces Military Exercises Around Taiwan", "category": "military", "severity": "critical"},
+        {"title": "US Deploys Carrier Strike Group to Western Pacific", "category": "military", "severity": "high"},
+        {"title": "Global Semiconductor Supply Chain Panic", "category": "economic", "severity": "critical"}
+      ]
+    },
+    {
+      "id": "ww3_scenario",
+      "title": "World War III",
+      "description": "Escalation from regional conflict to global war.",
+      "start_year": 2025,
+      "key_countries": ["US", "RU", "CN", "EU", "TR"],
+      "initial_events": [
+        {"title": "NATO-Russia Direct Military Confrontation", "category": "military", "severity": "critical"},
+        {"title": "China Seizes Opportunity in Pacific", "category": "military", "severity": "critical"},
+        {"title": "Global Markets Collapse", "category": "economic", "severity": "critical"}
+      ]
+    },
+    {
+      "id": "oil_embargo",
+      "title": "Global Oil Embargo",
+      "description": "OPEC+ halts oil exports, energy crisis engulfs the world.",
+      "start_year": 2025,
+      "key_countries": ["SA", "RU", "IR", "US", "CN", "EU"],
+      "initial_events": [
+        {"title": "OPEC+ Announces Total Export Halt", "category": "economic", "severity": "critical"},
+        {"title": "Oil Prices Surge Past $200/barrel", "category": "economic", "severity": "critical"},
+        {"title": "Emergency Energy Rationing in Europe", "category": "social", "severity": "high"}
+      ]
+    },
+    {
+      "id": "ottoman_2025",
+      "title": "Ottoman Empire in 2025",
+      "description": "What if the Ottoman Empire never fell? Alternative history simulation.",
+      "start_year": 2025,
+      "key_countries": ["TR", "EG", "SA", "IR", "EU"],
+      "initial_events": [
+        {"title": "Ottoman Sultan Addresses UN General Assembly", "category": "diplomatic", "severity": "medium"},
+        {"title": "Ottoman-European Trade Agreement Negotiations", "category": "economic", "severity": "medium"}
+      ]
+    },
+    {
+      "id": "ai_singularity",
+      "title": "AI Singularity Race",
+      "description": "Nations race to achieve artificial superintelligence.",
+      "start_year": 2027,
+      "key_countries": ["US", "CN", "EU", "GB", "JP"],
+      "initial_events": [
+        {"title": "Breakthrough in Artificial General Intelligence", "category": "technological", "severity": "critical"},
+        {"title": "Global AI Arms Race Declaration", "category": "military", "severity": "high"},
+        {"title": "Mass Automation Unemployment Wave", "category": "social", "severity": "high"}
+      ]
+    }
+  ]
+}

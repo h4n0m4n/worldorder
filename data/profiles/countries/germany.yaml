@@ -1,0 +1,54 @@
+code: DE
+name: Germany
+region: Europe
+capital: Berlin
+government: Federal Parliamentary Republic
+
+military:
+  power_index: 0.35
+  nuclear: false
+  active_personnel: 180000
+  defense_budget_pct_gdp: 2.0
+  navy_strength: 0.25
+  air_strength: 0.35
+  cyber_capability: 0.50
+
+economy:
+  gdp_trillion: 4.5
+  gdp_growth: 0.5
+  inflation: 3.0
+  debt_to_gdp: 65.0
+  unemployment: 5.5
+  trade_balance: 200.0
+  currency_strength: 0.80
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.05
+  gas_production: 0.2
+  rare_earth: 0.01
+  food_self_sufficiency: 0.80
+  water_stress: 0.15
+
+domestic:
+  stability: 0.70
+  democracy_index: 0.90
+  corruption: 0.18
+  press_freedom: 0.85
+  population_million: 84.0
+  median_age: 46.0
+  urbanization: 0.78
+  education_index: 0.88
+  tech_level: 0.82
+
+alliances:
+  - NATO
+  - EU
+
+civilization_dna:
+  heritage: "Holy Roman Empire, Prussian militarism, reunification, economic miracle"
+  strategic_identity: "European economic engine, reluctant military power, EU anchor with France"
+  cultural_tensions: "Nazi guilt, East-West divide legacy, immigration, energy transition pain"
+  historical_ambitions: "European leadership, industrial champion, Zeitenwende security awakening"
+  negotiation_culture: "Rules-based, thorough, consensus-seeking, Ordnungspolitik"
+  national_psyche: "Historical responsibility, export pride, Angst about decline, green conscience"

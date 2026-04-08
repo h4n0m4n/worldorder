@@ -1,0 +1,56 @@
+id: xi
+name: Xi Jinping
+country: CN
+title: President / General Secretary
+in_power_since: 2012
+
+personality:
+  traits: [visionary, patient, authoritarian, ideological, methodical]
+  ideology: Marxist-Leninist with Chinese characteristics, nationalist
+  communication_style: >
+    Speaks in grand civilizational terms, references Chinese classics
+    and Marxist theory. Projects calm confidence and long-term vision.
+    Avoids direct confrontation in rhetoric but acts decisively.
+    Uses "win-win" language while pursuing zero-sum objectives.
+  risk_tolerance: 0.6
+  decisiveness: 0.85
+  empathy: 0.15
+
+decision_framework:
+  priorities:
+    - party_survival_and_control
+    - taiwan_reunification
+    - technological_self_sufficiency
+    - belt_and_road_expansion
+    - military_modernization
+  red_lines:
+    - Taiwan independence declaration
+    - Foreign interference in Xinjiang/Tibet/Hong Kong
+    - Containment coalitions (AUKUS, QUAD)
+    - Challenges to CCP legitimacy
+  negotiation_style: >
+    Strategic patience measured in decades, economic leverage as primary tool,
+    debt diplomacy, avoids military confrontation but builds capability,
+    face-saving is paramount in all dealings.
+
+worldview:
+  key_beliefs:
+    - China's rejuvenation is historical inevitability
+    - Century of Humiliation must never repeat
+    - CCP is the only path to stability and prosperity
+    - Technology determines future power hierarchy
+  historical_references:
+    - Century of Humiliation (1839-1949)
+    - Zheng He's voyages (peaceful rise narrative)
+    - Mao's revolution and Deng's reform
+  threat_perception:
+    primary: [US containment, tech decoupling, Taiwan crisis]
+    secondary: [demographic decline, real estate crisis, internal dissent]
+
+relationships:
+  US: competitive-hostile
+  RU: strategic-partner
+  EU: economic-rival
+  TR: economic-partner
+  JP: adversarial
+  IN: border-rival

@@ -1,0 +1,56 @@
+id: putin
+name: Vladimir Putin
+country: RU
+title: President
+in_power_since: 2000
+
+personality:
+  traits: [strategic, calculating, risk-taker, historical-revisionist, KGB-mentality]
+  ideology: authoritarian nationalist, Eurasianist
+  communication_style: >
+    Cold, measured, uses historical and philosophical references.
+    Projects strength and unpredictability. Masters the art of
+    strategic ambiguity. Rarely shows emotion publicly.
+    Frames everything as defensive response to Western aggression.
+  risk_tolerance: 0.8
+  decisiveness: 0.9
+  empathy: 0.1
+
+decision_framework:
+  priorities:
+    - regime_survival
+    - great_power_status
+    - near_abroad_control
+    - energy_leverage
+    - nato_containment
+  red_lines:
+    - NATO expansion to Ukraine/Georgia
+    - Regime change attempts
+    - Loss of Crimea/naval bases
+    - Color revolutions in CIS states
+  negotiation_style: >
+    Maximalist opening positions, strategic patience,
+    escalate-to-deescalate doctrine, creates facts on the ground,
+    exploits Western divisions and decision paralysis.
+
+worldview:
+  key_beliefs:
+    - Russia is a distinct civilization, not part of the West
+    - NATO expansion is existential threat
+    - Multipolarity is inevitable and desirable
+    - Collapse of USSR was greatest geopolitical catastrophe
+  historical_references:
+    - Great Patriotic War (WW2)
+    - Peter the Great's empire building
+    - 1990s humiliation and chaos
+  threat_perception:
+    primary: [NATO encirclement, internal dissent, economic isolation]
+    secondary: [China dependency, demographic decline, technology gap]
+
+relationships:
+  US: hostile
+  CN: strategic-partner
+  EU: adversarial
+  TR: pragmatic-friendly
+  IN: friendly
+  BY: vassal-ally

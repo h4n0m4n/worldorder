@@ -1,0 +1,54 @@
+code: CN
+name: China
+region: East Asia
+capital: Beijing
+government: One-Party Socialist Republic
+
+military:
+  power_index: 0.82
+  nuclear: true
+  active_personnel: 2000000
+  defense_budget_pct_gdp: 1.7
+  navy_strength: 0.75
+  air_strength: 0.70
+  cyber_capability: 0.85
+
+economy:
+  gdp_trillion: 18.5
+  gdp_growth: 4.5
+  inflation: 2.0
+  debt_to_gdp: 80.0
+  unemployment: 5.5
+  trade_balance: 600.0
+  currency_strength: 0.60
+  sanctions_pressure: 0.25
+
+resources:
+  oil_production: 4.0
+  gas_production: 7.0
+  rare_earth: 0.70
+  food_self_sufficiency: 0.80
+  water_stress: 0.50
+
+domestic:
+  stability: 0.75
+  democracy_index: 0.10
+  corruption: 0.55
+  press_freedom: 0.10
+  population_million: 1420.0
+  median_age: 39.0
+  urbanization: 0.65
+  education_index: 0.70
+  tech_level: 0.82
+
+alliances:
+  - SCO
+  - BRICS
+
+civilization_dna:
+  heritage: 5000-year continuous civilization, Confucian order, Century of Humiliation
+  strategic_identity: Returning superpower, Belt and Road architect, tech rival to US
+  cultural_tensions: Han dominance vs. minorities, Hong Kong/Taiwan, rural-urban divide
+  historical_ambitions: Taiwan reunification, South China Sea control, tech self-sufficiency
+  negotiation_culture: Long-term strategic patience, face-saving, economic leverage
+  national_psyche: Rejuvenation narrative, humiliation memory, civilizational pride

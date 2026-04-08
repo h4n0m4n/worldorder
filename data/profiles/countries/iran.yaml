@@ -1,0 +1,53 @@
+code: IR
+name: Iran
+region: Middle East
+capital: Tehran
+government: Islamic Republic (Theocratic)
+
+military:
+  power_index: 0.45
+  nuclear: false
+  active_personnel: 610000
+  defense_budget_pct_gdp: 2.5
+  navy_strength: 0.30
+  air_strength: 0.30
+  cyber_capability: 0.50
+
+economy:
+  gdp_trillion: 0.4
+  gdp_growth: 2.0
+  inflation: 40.0
+  debt_to_gdp: 30.0
+  unemployment: 12.0
+  trade_balance: 10.0
+  currency_strength: 0.10
+  sanctions_pressure: 0.85
+
+resources:
+  oil_production: 3.5
+  gas_production: 9.0
+  rare_earth: 0.03
+  food_self_sufficiency: 0.75
+  water_stress: 0.70
+
+domestic:
+  stability: 0.40
+  democracy_index: 0.15
+  corruption: 0.60
+  press_freedom: 0.08
+  population_million: 88.0
+  median_age: 32.0
+  urbanization: 0.76
+  education_index: 0.65
+  tech_level: 0.45
+
+alliances:
+  - Axis of Resistance
+
+civilization_dna:
+  heritage: "Persian Empire legacy, Shia Islamic revolution, sanctions resilience"
+  strategic_identity: "Regional resistance axis leader, proxy warfare specialist, nuclear threshold state"
+  cultural_tensions: "Theocracy vs. secular youth, Persian vs. Islamic identity, ethnic minorities"
+  historical_ambitions: "Regional hegemony, nuclear capability, Shia crescent, anti-Western bloc"
+  negotiation_culture: "Strategic patience, bazaar haggling, taqiyya diplomacy, brinkmanship"
+  national_psyche: "Ancient civilization pride, siege mentality, revolutionary defiance, martyrdom culture"

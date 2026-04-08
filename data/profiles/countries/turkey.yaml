@@ -1,0 +1,53 @@
+code: TR
+name: Turkey
+region: Middle East / Europe
+capital: Ankara
+government: Presidential Republic
+
+military:
+  power_index: 0.55
+  nuclear: false
+  active_personnel: 425000
+  defense_budget_pct_gdp: 1.9
+  navy_strength: 0.45
+  air_strength: 0.50
+  cyber_capability: 0.35
+
+economy:
+  gdp_trillion: 1.15
+  gdp_growth: 4.0
+  inflation: 50.0
+  debt_to_gdp: 35.0
+  unemployment: 10.0
+  trade_balance: -40.0
+  currency_strength: 0.25
+  sanctions_pressure: 0.05
+
+resources:
+  oil_production: 0.07
+  gas_production: 0.01
+  rare_earth: 0.05
+  food_self_sufficiency: 0.85
+  water_stress: 0.55
+
+domestic:
+  stability: 0.55
+  democracy_index: 0.42
+  corruption: 0.55
+  press_freedom: 0.30
+  population_million: 85.0
+  median_age: 32.0
+  urbanization: 0.77
+  education_index: 0.65
+  tech_level: 0.50
+
+alliances:
+  - NATO
+
+civilization_dna:
+  heritage: Ottoman Empire, Byzantine crossroads, Seljuk Turks
+  strategic_identity: Bridge between East and West, NATO's southeastern flank
+  cultural_tensions: Secular vs. religious conservatism, Kurdish question
+  historical_ambitions: Neo-Ottoman regional influence, energy corridor hub
+  negotiation_culture: Bazaar diplomacy — tough opening, flexible endgame
+  national_psyche: Sevres syndrome (fear of partition), Ataturk modernization pride

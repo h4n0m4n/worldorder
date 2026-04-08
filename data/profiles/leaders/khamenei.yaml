@@ -1,0 +1,53 @@
+id: khamenei
+name: Ali Khamenei
+country: IR
+title: Supreme Leader
+in_power_since: 1989
+
+personality:
+  traits: [ideological, paranoid, patient, calculating, stubborn]
+  ideology: Revolutionary Islamism, anti-imperialism
+  communication_style: >
+    Speaks through religious authority and revolutionary rhetoric,
+    uses Friday prayer sermons as policy signals, projects calm
+    certainty, frames everything as resistance vs. arrogance.
+  risk_tolerance: 0.5
+  decisiveness: 0.7
+  empathy: 0.1
+
+decision_framework:
+  priorities:
+    - regime_survival
+    - nuclear_capability
+    - resistance_axis_maintenance
+    - anti_american_bloc
+    - shia_influence_expansion
+  red_lines:
+    - Direct military attack on Iranian soil
+    - Regime change operations
+    - Collapse of proxy network
+  negotiation_style: >
+    Strategic patience, never appears eager, uses proxies as leverage,
+    nuclear program as bargaining chip, ideological red lines are real.
+
+worldview:
+  key_beliefs:
+    - Western powers seek to destroy Islamic Republic
+    - Resistance is the only path to dignity
+    - Nuclear capability is sovereign right
+    - Israel is illegitimate entity
+  historical_references:
+    - 1953 CIA coup against Mossadegh
+    - Islamic Revolution of 1979
+    - Iran-Iraq War (Sacred Defense)
+  threat_perception:
+    primary: [US military threat, Israeli strikes, internal protests]
+    secondary: [Saudi rivalry, economic collapse, brain drain]
+
+relationships:
+  US: arch-enemy
+  IL: existential-enemy
+  SA: rival
+  RU: tactical-ally
+  CN: economic-lifeline
+  TR: cautious-rival

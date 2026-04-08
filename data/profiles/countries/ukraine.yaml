@@ -1,0 +1,54 @@
+code: UA
+name: Ukraine
+region: Eastern Europe
+capital: Kyiv
+government: Semi-Presidential Republic
+
+military:
+  power_index: 0.35
+  nuclear: false
+  active_personnel: 900000
+  defense_budget_pct_gdp: 30.0
+  navy_strength: 0.10
+  air_strength: 0.25
+  cyber_capability: 0.40
+
+economy:
+  gdp_trillion: 0.15
+  gdp_growth: -5.0
+  inflation: 20.0
+  debt_to_gdp: 90.0
+  unemployment: 25.0
+  trade_balance: -10.0
+  currency_strength: 0.10
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.05
+  gas_production: 0.7
+  rare_earth: 0.05
+  food_self_sufficiency: 0.85
+  water_stress: 0.25
+
+domestic:
+  stability: 0.40
+  democracy_index: 0.55
+  corruption: 0.55
+  press_freedom: 0.45
+  population_million: 37.0
+  median_age: 41.0
+  urbanization: 0.70
+  education_index: 0.70
+  tech_level: 0.50
+
+alliances:
+  - EU candidate
+  - NATO aspirant
+
+civilization_dna:
+  heritage: "Kievan Rus origin, Cossack freedom tradition, Soviet legacy, Orange/Maidan revolutions"
+  strategic_identity: "European frontier state, breadbasket of Europe, buffer zone turned battleground"
+  cultural_tensions: "East-West linguistic divide, Russian influence legacy, wartime unity"
+  historical_ambitions: "EU and NATO membership, territorial integrity, European identity"
+  negotiation_culture: "Survival diplomacy, Western lobbying, emotional appeals, Zelensky media mastery"
+  national_psyche: "Defiance against empire, national awakening through war, sacrifice and resilience"

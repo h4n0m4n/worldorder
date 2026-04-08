@@ -1,0 +1,54 @@
+id: erdogan
+name: Recep Tayyip Erdogan
+country: TR
+title: President
+in_power_since: 2003
+
+personality:
+  traits: [pragmatic, resilient, populist, confrontational, strategic-survivor]
+  ideology: conservative-nationalist with Islamist roots
+  communication_style: >
+    Passionate public speaker, uses Ottoman/Islamic historical references,
+    alternates between fiery rhetoric and diplomatic charm.
+    Frequently invokes national sovereignty and anti-Western sentiment
+    while maintaining transactional relationships with all sides.
+  risk_tolerance: 0.7
+  decisiveness: 0.8
+  empathy: 0.3
+
+decision_framework:
+  priorities:
+    - regime_survival
+    - economic_growth
+    - regional_influence
+    - defense_industry_independence
+    - energy_security
+  red_lines:
+    - Kurdish autonomous state on borders
+    - Foreign interference in domestic politics
+    - Loss of control over Bosphorus/Dardanelles
+  negotiation_style: >
+    Opens with maximalist demands, leverages geography and refugee card,
+    plays NATO against Russia, makes last-minute deals.
+
+worldview:
+  key_beliefs:
+    - Turkey deserves great power status
+    - The West has double standards toward Muslim nations
+    - Economic independence requires defense industry autonomy
+    - Regional chaos is both threat and opportunity
+  historical_references:
+    - Ottoman Empire golden age
+    - Gallipoli and War of Independence
+    - Sevres Treaty as existential threat template
+  threat_perception:
+    primary: [PKK, Gulen movement, economic collapse]
+    secondary: [Greek tensions, Syrian instability, US sanctions]
+
+relationships:
+  US: tense
+  RU: pragmatic-friendly
+  CN: economic-partner
+  EU: complicated
+  IL: hostile-pragmatic
+  SA: rival-partner

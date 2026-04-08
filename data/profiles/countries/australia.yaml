@@ -1,0 +1,55 @@
+code: AU
+name: Australia
+region: Oceania
+capital: Canberra
+government: Federal Parliamentary Constitutional Monarchy
+
+military:
+  power_index: 0.35
+  nuclear: false
+  active_personnel: 60000
+  defense_budget_pct_gdp: 2.4
+  navy_strength: 0.40
+  air_strength: 0.40
+  cyber_capability: 0.55
+
+economy:
+  gdp_trillion: 1.7
+  gdp_growth: 2.5
+  inflation: 3.5
+  debt_to_gdp: 50.0
+  unemployment: 4.0
+  trade_balance: 80.0
+  currency_strength: 0.60
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.3
+  gas_production: 5.5
+  rare_earth: 0.08
+  food_self_sufficiency: 0.95
+  water_stress: 0.50
+
+domestic:
+  stability: 0.80
+  democracy_index: 0.85
+  corruption: 0.20
+  press_freedom: 0.75
+  population_million: 26.0
+  median_age: 38.0
+  urbanization: 0.86
+  education_index: 0.82
+  tech_level: 0.70
+
+alliances:
+  - AUKUS
+  - Five Eyes
+  - QUAD
+
+civilization_dna:
+  heritage: "Indigenous 65000-year culture, British colonial settlement, multicultural immigration"
+  strategic_identity: "Indo-Pacific middle power, resource exporter, US alliance anchor in southern hemisphere"
+  cultural_tensions: "Indigenous reconciliation, China economic dependency vs. security, climate vulnerability"
+  historical_ambitions: "Indo-Pacific stability, resource diplomacy, middle power influence"
+  negotiation_culture: "Mateship directness, alliance loyalty, pragmatic resource diplomacy"
+  national_psyche: "Lucky country complacency, ANZAC spirit, geographic isolation awareness"

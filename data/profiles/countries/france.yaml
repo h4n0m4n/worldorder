@@ -1,0 +1,54 @@
+code: FR
+name: France
+region: Europe
+capital: Paris
+government: Semi-Presidential Republic
+
+military:
+  power_index: 0.55
+  nuclear: true
+  active_personnel: 205000
+  defense_budget_pct_gdp: 2.1
+  navy_strength: 0.50
+  air_strength: 0.50
+  cyber_capability: 0.60
+
+economy:
+  gdp_trillion: 3.0
+  gdp_growth: 1.5
+  inflation: 3.0
+  debt_to_gdp: 112.0
+  unemployment: 7.5
+  trade_balance: -50.0
+  currency_strength: 0.80
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.02
+  gas_production: 0.0
+  rare_earth: 0.01
+  food_self_sufficiency: 0.85
+  water_stress: 0.20
+
+domestic:
+  stability: 0.55
+  democracy_index: 0.78
+  corruption: 0.28
+  press_freedom: 0.72
+  population_million: 68.0
+  median_age: 42.0
+  urbanization: 0.81
+  education_index: 0.80
+  tech_level: 0.75
+
+alliances:
+  - NATO
+  - EU
+
+civilization_dna:
+  heritage: "Frankish kingdom, Revolution, Napoleonic empire, colonial legacy, Fifth Republic"
+  strategic_identity: "Independent nuclear power, EU co-leader, Francophone world patron, UNSC permanent member"
+  cultural_tensions: "Laicite vs. multiculturalism, Yellow Vests inequality, Francafrique legacy"
+  historical_ambitions: "Strategic autonomy, European defense, cultural influence, grandeur"
+  negotiation_culture: "Cartesian logic, grandstanding, independent streak, EU Franco-German axis"
+  national_psyche: "Revolutionary spirit, cultural superiority, protest tradition, grandeur nostalgia"

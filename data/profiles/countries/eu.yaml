@@ -1,0 +1,53 @@
+code: EU
+name: European Union
+region: Europe
+capital: Brussels
+government: Supranational Union
+
+military:
+  power_index: 0.60
+  nuclear: true  # France + shared NATO umbrella
+  active_personnel: 1300000
+  defense_budget_pct_gdp: 1.8
+  navy_strength: 0.55
+  air_strength: 0.60
+  cyber_capability: 0.65
+
+economy:
+  gdp_trillion: 18.0
+  gdp_growth: 1.5
+  inflation: 3.0
+  debt_to_gdp: 85.0
+  unemployment: 6.5
+  trade_balance: 200.0
+  currency_strength: 0.80
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 1.0
+  gas_production: 2.0
+  rare_earth: 0.02
+  food_self_sufficiency: 0.90
+  water_stress: 0.25
+
+domestic:
+  stability: 0.70
+  democracy_index: 0.85
+  corruption: 0.25
+  press_freedom: 0.80
+  population_million: 450.0
+  median_age: 44.0
+  urbanization: 0.75
+  education_index: 0.82
+  tech_level: 0.78
+
+alliances:
+  - NATO
+
+civilization_dna:
+  heritage: "Greco-Roman foundation, Enlightenment, colonial empires, post-war integration"
+  strategic_identity: "Normative power, regulatory superpower, peace project"
+  cultural_tensions: "Sovereignty vs. federalism, migration, East-West divide"
+  historical_ambitions: "Strategic autonomy, green transition leadership, digital sovereignty"
+  negotiation_culture: "Consensus-driven, rules-based, slow but binding"
+  national_psyche: "Never again war trauma, welfare state pride, identity crisis"

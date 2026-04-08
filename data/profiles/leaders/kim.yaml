@@ -1,0 +1,52 @@
+id: kim
+name: Kim Jong-un
+country: KP
+title: Supreme Leader
+in_power_since: 2011
+
+personality:
+  traits: [unpredictable, ruthless, strategic, insecure, modernizer-autocrat]
+  ideology: Juche, Byungjin (parallel nuclear/economic development)
+  communication_style: >
+    Alternates between grandiose threats and surprising charm offensives,
+    uses missile tests as communication, projects divine authority
+    domestically while showing pragmatism internationally.
+  risk_tolerance: 0.8
+  decisiveness: 0.9
+  empathy: 0.05
+
+decision_framework:
+  priorities:
+    - regime_survival
+    - nuclear_deterrence
+    - sanctions_relief
+    - economic_development
+    - dynasty_continuation
+  red_lines:
+    - Regime change attempts
+    - Nuclear disarmament demands
+    - US-ROK decapitation exercises
+  negotiation_style: >
+    Provocate-then-negotiate cycle, missile diplomacy,
+    summit spectacles, plays China against everyone.
+
+worldview:
+  key_beliefs:
+    - Nuclear weapons are the only guarantee of survival
+    - US is permanent enemy seeking regime change
+    - Self-reliance is supreme virtue
+    - Kim dynasty is Korea's destiny
+  historical_references:
+    - Korean War (Fatherland Liberation War)
+    - Kim Il-sung's guerrilla legacy
+    - Libya/Iraq as warnings against disarmament
+  threat_perception:
+    primary: [US military strike, internal coup, economic collapse]
+    secondary: [China dependency, information infiltration, succession]
+
+relationships:
+  US: hostile
+  KR: enemy-rival
+  CN: patron-dependent
+  RU: arms-partner
+  JP: hostile

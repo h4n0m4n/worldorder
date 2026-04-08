@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: #1a1a2e;
+  --border: #2a2a3e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888;
+  --accent-blue: #4a9eff;
+  --accent-red: #ff4a4a;
+  --accent-green: #4aff4a;
+  --accent-yellow: #ffd700;
+  --accent-purple: #9b59b6;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+.glow-red { box-shadow: 0 0 15px rgba(255, 74, 74, 0.3); }
+.glow-blue { box-shadow: 0 0 15px rgba(74, 158, 255, 0.3); }
+.glow-green { box-shadow: 0 0 15px rgba(74, 255, 74, 0.3); }
+.glow-yellow { box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+
+.scrollbar-thin::-webkit-scrollbar { width: 6px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: var(--bg-secondary); }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }

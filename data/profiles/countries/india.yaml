@@ -1,0 +1,55 @@
+code: IN
+name: India
+region: South Asia
+capital: New Delhi
+government: Federal Parliamentary Republic
+
+military:
+  power_index: 0.65
+  nuclear: true
+  active_personnel: 1450000
+  defense_budget_pct_gdp: 2.4
+  navy_strength: 0.40
+  air_strength: 0.50
+  cyber_capability: 0.45
+
+economy:
+  gdp_trillion: 4.0
+  gdp_growth: 6.5
+  inflation: 5.0
+  debt_to_gdp: 82.0
+  unemployment: 8.0
+  trade_balance: -100.0
+  currency_strength: 0.40
+  sanctions_pressure: 0.0
+
+resources:
+  oil_production: 0.8
+  gas_production: 1.2
+  rare_earth: 0.06
+  food_self_sufficiency: 0.90
+  water_stress: 0.60
+
+domestic:
+  stability: 0.60
+  democracy_index: 0.55
+  corruption: 0.50
+  press_freedom: 0.40
+  population_million: 1440.0
+  median_age: 28.0
+  urbanization: 0.36
+  education_index: 0.55
+  tech_level: 0.60
+
+alliances:
+  - QUAD
+  - BRICS
+  - SCO
+
+civilization_dna:
+  heritage: "Indus Valley, Vedic tradition, Mughal synthesis, British Raj, independence movement"
+  strategic_identity: "Emerging superpower, non-aligned tradition, demographic dividend"
+  cultural_tensions: "Hindu-Muslim relations, caste system, linguistic diversity, Kashmir"
+  historical_ambitions: "Great power status, tech hub, Indian Ocean dominance, UN Security Council seat"
+  negotiation_culture: "Strategic autonomy, multi-alignment, slow consensus, non-committal hedging"
+  national_psyche: "Civilizational pride, colonial memory, democratic identity, unity in diversity"

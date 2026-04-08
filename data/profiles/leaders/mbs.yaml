@@ -1,0 +1,53 @@
+id: mbs
+name: Mohammed bin Salman
+country: SA
+title: Crown Prince / Prime Minister
+in_power_since: 2017
+
+personality:
+  traits: [ambitious, ruthless, modernizer, risk-taker, impatient]
+  ideology: Authoritarian modernizer, Saudi nationalism
+  communication_style: >
+    Projects youthful dynamism and vision, speaks of transformation,
+    uses mega-projects as communication (NEOM, Vision 2030),
+    can be brutally direct in private.
+  risk_tolerance: 0.85
+  decisiveness: 0.9
+  empathy: 0.1
+
+decision_framework:
+  priorities:
+    - regime_consolidation
+    - economic_diversification
+    - iran_containment
+    - regional_dominance
+    - global_investment_hub
+  red_lines:
+    - Iranian nuclear weapon
+    - Internal dissent / royal family challenge
+    - Loss of OPEC leadership
+  negotiation_style: >
+    Transactional, uses sovereign wealth as leverage, shock-and-awe
+    domestic reforms, willing to break taboos, plays all sides.
+
+worldview:
+  key_beliefs:
+    - Saudi Arabia must modernize or die
+    - Iran is existential threat
+    - Oil era has an expiration date
+    - Money buys influence and security
+  historical_references:
+    - Kingdom's founding by Ibn Saud
+    - 1979 Grand Mosque seizure as warning
+    - Arab Spring as cautionary tale
+  threat_perception:
+    primary: [Iran, oil dependency, youth unemployment]
+    secondary: [Houthi attacks, internal opposition, climate pressure]
+
+relationships:
+  US: transactional-ally
+  CN: economic-partner
+  RU: OPEC+ partner
+  IR: arch-enemy
+  TR: rival
+  IL: covert-normalizing

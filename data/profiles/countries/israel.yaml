@@ -1,0 +1,54 @@
+code: IL
+name: Israel
+region: Middle East
+capital: Jerusalem (disputed)
+government: Parliamentary Republic
+
+military:
+  power_index: 0.55
+  nuclear: true
+  active_personnel: 170000
+  defense_budget_pct_gdp: 5.5
+  navy_strength: 0.35
+  air_strength: 0.70
+  cyber_capability: 0.90
+
+economy:
+  gdp_trillion: 0.53
+  gdp_growth: 3.0
+  inflation: 3.5
+  debt_to_gdp: 62.0
+  unemployment: 4.0
+  trade_balance: -15.0
+  currency_strength: 0.65
+  sanctions_pressure: 0.05
+
+resources:
+  oil_production: 0.0
+  gas_production: 0.8
+  rare_earth: 0.0
+  food_self_sufficiency: 0.70
+  water_stress: 0.75
+
+domestic:
+  stability: 0.50
+  democracy_index: 0.65
+  corruption: 0.35
+  press_freedom: 0.55
+  population_million: 9.8
+  median_age: 30.0
+  urbanization: 0.93
+  education_index: 0.85
+  tech_level: 0.90
+
+alliances:
+  - US-Israel Alliance
+  - Abraham Accords
+
+civilization_dna:
+  heritage: "Ancient Jewish homeland, diaspora return, Holocaust memory, startup nation"
+  strategic_identity: "Qualitative military edge, tech powerhouse, US strategic partner"
+  cultural_tensions: "Secular vs. ultra-Orthodox, Israeli-Palestinian conflict, settler movement"
+  historical_ambitions: "Security through strength, regional normalization, tech superpower"
+  negotiation_culture: "Chutzpah, fait accompli strategy, security-first framing, US lobbying"
+  national_psyche: "Never again mentality, existential threat awareness, innovation as survival"
