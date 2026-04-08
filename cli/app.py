@@ -148,6 +148,13 @@ cli.add_command(show_map)
 cli.add_command(history)
 
 
+@cli.command()
+def tui() -> None:
+    """Launch the full-screen cinematic TUI."""
+    from cli.tui import run_tui
+    run_tui()
+
+
 def main() -> None:
     cli()
 

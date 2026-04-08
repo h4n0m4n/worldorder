@@ -11,6 +11,8 @@ from engine.event_bus import EventBus, SimEvent, EventCategory, EventSeverity
 from engine.time_engine import TimeEngine
 from engine.crisis import CrisisGenerator
 from data.loader import load_all_countries, load_all_leader_profiles
+from data.mass_loader import load_all_countries_mass, initialize_leaders
+from data.leader_generator import DynamicLeaderSystem
 from llm.base import LLMProvider
 from llm.prompt_builder import (
     build_leader_system_prompt,
@@ -44,25 +46,41 @@ class Simulation:
         )
 
         self.leader_profiles: dict[str, dict[str, Any]] = {}
+        self.leader_system: DynamicLeaderSystem | None = None
         self.decisions_log: list[dict[str, Any]] = []
 
     def setup(self) -> None:
-        """Load countries and leader profiles."""
-        countries = load_all_countries()
+        """Load all 176 countries and initialize dynamic leader system."""
+        countries = load_all_countries_mass()
         for c in countries:
             self.world.add_country(c)
 
+        self.leader_system = initialize_leaders(
+            countries, year=self.config.start_year, rng_seed=self.config.seed
+        )
+
+        # Also load hand-crafted YAML profiles for major countries
         self.leader_profiles = load_all_leader_profiles()
-        for lid, profile in self.leader_profiles.items():
-            country_code = profile.get("country")
-            country = self.world.get(country_code)
-            if country:
-                country.leader_id = lid
 
     async def run_turn(self) -> dict[str, Any]:
         """Execute a single simulation turn."""
         turn = self.world.turn
         year = self.world.year
+
+        # Check for leader transitions (elections, coups, etc.)
+        leader_transitions: list[dict[str, Any]] = []
+        if self.leader_system:
+            stability_map = {c.code: c.domestic.stability for c in self.world.all_countries()}
+            leader_transitions = self.leader_system.check_transitions(year, stability_map)
+            for trans in leader_transitions:
+                await self.event_bus.publish(SimEvent(
+                    turn=turn, year=year,
+                    category=EventCategory.POLITICAL,
+                    severity=EventSeverity.HIGH if trans["reason"] in ("coup", "revolution") else EventSeverity.MEDIUM,
+                    title=f"{trans['country']}: Leadership Change ({trans['reason']})",
+                    description=f"{trans.get('old_leader', '?')} replaced by {trans['new_leader']}",
+                    source_country=trans["country"],
+                ))
 
         crises = await self.crisis_gen.roll_crises()
 
