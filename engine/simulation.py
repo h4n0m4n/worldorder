@@ -49,6 +49,15 @@ class Simulation:
         self.leader_system: DynamicLeaderSystem | None = None
         self.decisions_log: list[dict[str, Any]] = []
 
+        # Advanced subsystems
+        from engine.shadow_powers import ShadowPowerEngine
+        from engine.war_simulator import WarSimulator
+        from engine.future_predictor import FuturePredictionEngine
+
+        self.shadow_powers = ShadowPowerEngine(rng_seed=config.seed)
+        self.war_sim = WarSimulator(self.world, self.event_bus, rng_seed=config.seed)
+        self.predictor: FuturePredictionEngine | None = None  # initialized after setup
+
     def setup(self) -> None:
         """Load all 176 countries and initialize dynamic leader system."""
         countries = load_all_countries_mass()
@@ -61,6 +70,10 @@ class Simulation:
 
         # Also load hand-crafted YAML profiles for major countries
         self.leader_profiles = load_all_leader_profiles()
+
+        # Initialize prediction engine after world is loaded
+        from engine.future_predictor import FuturePredictionEngine
+        self.predictor = FuturePredictionEngine(self.world, rng_seed=self.config.seed)
 
     async def run_turn(self) -> dict[str, Any]:
         """Execute a single simulation turn."""

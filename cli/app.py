@@ -139,13 +139,16 @@ def check(provider_name: str) -> None:
 
 
 # Register extended commands
-from cli.commands import scenarios, news, wiki, show_map, history
+from cli.commands import scenarios, news, wiki, show_map, history, war, predict, shadows
 
 cli.add_command(scenarios)
 cli.add_command(news)
 cli.add_command(wiki)
 cli.add_command(show_map)
 cli.add_command(history)
+cli.add_command(war)
+cli.add_command(predict)
+cli.add_command(shadows)
 
 
 @cli.command()
