@@ -90,7 +90,7 @@ class Simulation:
         from agents.leader_agent import LeaderAgent
         from agents.civilization_dna import CivilizationDNA
 
-        top_countries = self.world.ranked_by_power()[:20]
+        top_countries = self.world.ranked_by_power()[:self.config.top_n_leaders]
         for country in top_countries:
             profile = self._resolve_leader_profile(country)
             if not profile:
@@ -332,7 +332,7 @@ class Simulation:
         all_countries = self.world.all_countries()
         turn_decisions: dict[str, LeaderDecision | dict] = {}
 
-        top_countries = self.world.ranked_by_power()[:20]
+        top_countries = self.world.ranked_by_power()[:self.config.top_n_leaders]
 
         for country in top_countries:
             if not country.leader_id:

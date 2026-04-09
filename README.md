@@ -1,248 +1,161 @@
-<div align="center">
+# WORLD ORDER
 
-# 🌍 WORLD ORDER
+**AI-Powered Geopolitical Simulation Engine**
 
-### AI-Powered Civilization & Geopolitical Simulation Engine
+A real-time geopolitical simulation where AI-controlled world leaders make strategic decisions, wars unfold across turns, shadow powers profit from chaos, and you control the fate of nations — all visualized on an interactive 3D globe.
 
-**Real leaders. Real personalities. Simulated futures.**
+## What Is This?
 
-*History doesn't repeat itself, but it rhymes. Now you can hear the next verse.*
+WORLD ORDER simulates the entire world — 176 nations, 48 real leaders (Putin, Xi, Biden, Erdogan...), arms dealers, PMCs, energy cartels — all driven by AI. Each turn, leaders analyze the world situation and make decisions: diplomacy, military action, trade, sanctions. Wars start, alliances shift, economies crash, coups happen.
 
-[![Python](https://img.shields.io/badge/Python-3.12+-blue?logo=python&logoColor=white)](https://python.org)
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/h4n0m4n/worldorder?style=social)](https://github.com/h4n0m4n/worldorder)
+You watch it unfold on a cinematic 3D globe. Or you intervene: start wars, inject crises, force coups, form alliances.
 
----
+## Features
 
-**What if WW3 started tomorrow?** · **Can AI prevent wars?** · **Ottoman Empire in 2025?**
+### Simulation Engine
+- **176 countries** with real economic, military, demographic data
+- **48 hand-crafted leader profiles** (personality, ideology, risk tolerance)
+- **AI-driven decisions** via local LLM (Ollama) — each leader thinks, consults advisors, then acts
+- **Multi-turn wars** that progress through phases (mobilization → strike → ground → attrition → outcome)
+- **Shadow powers** — arms dealers (Lockheed, BAE, Rosoboronexport), PMCs (Wagner, Academi), financial networks, energy cartels (OPEC+, Gazprom)
+- **Dynamic leader transitions** — elections, coups, revolutions, deaths
+- **Crisis system** — random events (pandemics, oil shocks, cyber attacks) + manual injection
+- **Future predictions** — AI-generated threat analysis with probability scores
 
-WORLD ORDER simulates global geopolitics using AI agents that think, negotiate, threaten, and make decisions like real world leaders — from ancient civilizations to the year 2100.
+### 3D Cinematic UI
+- **Three.js globe** with NASA Blue Marble texture, atmosphere glow, starfield
+- **Country markers** sized by power, colored by status (war/unstable/nuclear)
+- **War arcs** — red pulsing lines between warring nations
+- **Hover tooltips** with country stats
+- **Click interactions** — select countries, view intel, simulate wars
+- **Cinematic turn transitions** — full-screen year animation + leader decision carousel
+- **Particle explosions** for war effects
+- **HUD overlay** — year counter, mini-stats, event ticker, active war badges
 
-</div>
+### Player Controls
+- **Next Turn** — advance simulation, watch AI leaders decide
+- **Declare War** — select two countries, see analysis, launch war
+- **Inject Crisis** — custom crisis events that affect the world
+- **Force Coup** — overthrow any leader
+- **Form Alliance** — create bilateral alliances
+- **Apply Sanctions** — economic warfare
+- **Trade Deals** — boost economies between nations
+- **Intel Mode** — view shadow powers, predictions, financial networks
 
----
+## Quick Start
 
-## ⚡ Quick Start
+### Prerequisites
+- Python 3.11+
+- [Ollama](https://ollama.ai/) with a model installed
+
+### Install & Run
 
 ```bash
 # Clone
 git clone https://github.com/h4n0m4n/worldorder.git
 cd worldorder
 
-# Install
-pip install -e .
+# Install dependencies
+pip install pydantic pyyaml httpx rich textual click fastapi uvicorn
 
-# Run (requires Ollama running locally)
-worldorder start --turns 20
+# Install an LLM model
+ollama pull qwen2.5:7b
 
-# Or use free cloud API (no local GPU needed)
-worldorder start --provider groq --model llama-3.1-8b-instant
+# Run
+python app.py
 ```
 
-## 🎮 What Is This?
+Open `http://127.0.0.1:8000` in your browser.
 
-WORLD ORDER is a **multi-agent geopolitical simulation engine** where:
+### First Steps
+1. Click "CLICK TO BEGIN" on the intro screen
+2. Click **NEXT TURN** — watch AI leaders make decisions
+3. Click any country on the globe — see detailed intel
+4. Click two countries — war simulation appears
+5. Hit **INTEL** — see shadow powers and threat predictions
+6. Hit **CRISIS** — inject a custom crisis
 
-- **21 nations** are modeled with real economic, military, and political data
-- **AI agents** embody real world leaders (Putin, Xi, Erdogan, Biden...) with their actual personalities, ideologies, and decision-making patterns
-- **Civilization DNA** — each nation carries deep cultural/historical identity that persists across centuries
-- **Advisor panels** — each leader has military, economic, intelligence, diplomatic, and domestic advisors
-- **Memory systems** — leaders remember past events, hold grudges, and form alliances
-- **Crisis engine** — random or custom crises (pandemics, oil shocks, nuclear threats) inject chaos
-- **"What If?" mode** — inject any scenario and watch the world react
-
-## 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────┐
-│                   UI LAYER                       │
-│  ┌──────────────┐  ┌────────────────────────┐   │
-│  │  CLI (Rich)   │  │  Web (Next.js + React) │   │
-│  └──────────────┘  └────────────────────────┘   │
-├─────────────────────────────────────────────────┤
-│                  API (FastAPI)                    │
-├─────────────────────────────────────────────────┤
-│               AI AGENT LAYER                     │
-│  ┌────────┐ ┌──────────┐ ┌───────────────────┐  │
-│  │Leaders │ │ Advisors │ │ Civilization DNA  │  │
-│  │(LLM)   │ │ (5 each) │ │ (Cultural Memory) │  │
-│  └────────┘ └──────────┘ └───────────────────┘  │
-├─────────────────────────────────────────────────┤
-│              CORE ENGINE (Python)                 │
-│  ┌────────────┐ ┌──────┐ ┌────────┐ ┌───────┐  │
-│  │World State │ │Time  │ │Event   │ │Crisis │  │
-│  │Manager     │ │Engine│ │Bus     │ │Gen    │  │
-│  └────────────┘ └──────┘ └────────┘ └───────┘  │
-├─────────────────────────────────────────────────┤
-│            LLM LAYER (Pluggable)                 │
-│  Ollama │ Groq │ OpenRouter │ OpenAI │ Any LLM  │
-└─────────────────────────────────────────────────┘
-```
-
-## 🌐 21 Nations Modeled
-
-| Rank | Country | Power | Nuclear | Key Feature |
-|------|---------|-------|---------|-------------|
-| 1 | 🇺🇸 United States | 85.6 | ✅ | Global hegemon, tech leader |
-| 2 | 🇨🇳 China | 80.2 | ✅ | Rising superpower, manufacturing giant |
-| 3 | 🇪🇺 European Union | 65.2 | ✅ | Regulatory superpower, peace project |
-| 4 | 🇮🇳 India | 51.9 | ✅ | Demographic dividend, tech hub |
-| 5 | 🇯🇵 Japan | 45.5 | ❌ | Tech innovator, aging society |
-| 6 | 🇷🇺 Russia | 45.4 | ✅ | Energy superpower, military power |
-| 7 | 🇬🇧 United Kingdom | 43.0 | ✅ | Intelligence hub, financial center |
-| 8 | 🇫🇷 France | 41.1 | ✅ | Nuclear power, EU co-leader |
-| 9 | 🇮🇱 Israel | 40.2 | ✅ | Tech powerhouse, cyber leader |
-| 10 | 🇩🇪 Germany | 39.9 | ❌ | Economic engine of Europe |
-| 11 | 🇰🇷 South Korea | 39.9 | ❌ | K-wave, semiconductor leader |
-| 12 | 🇦🇺 Australia | 34.7 | ❌ | Resource exporter, AUKUS member |
-| 13 | 🇹🇷 Turkey | 33.9 | ❌ | NATO's eastern flank, bridge between worlds |
-| 14 | 🇸🇦 Saudi Arabia | 29.6 | ❌ | Oil kingdom, Vision 2030 |
-| 15 | 🇧🇷 Brazil | 29.0 | ❌ | South American giant, Amazon guardian |
-| 16 | 🇮🇷 Iran | 27.6 | ❌ | Resistance axis, nuclear threshold |
-| 17 | 🇵🇰 Pakistan | 25.0 | ✅ | Nuclear state, China corridor |
-| 18 | 🇺🇦 Ukraine | 24.9 | ❌ | Frontline of democracy |
-| 19 | 🇪🇬 Egypt | 24.2 | ❌ | Suez controller, Arab anchor |
-| 20 | 🇰🇵 North Korea | 23.7 | ✅ | Nuclear hermit kingdom |
-| 21 | 🇳🇬 Nigeria | 16.6 | ❌ | Africa's most populous nation |
-
-## 🧠 How Leaders Think
-
-Each AI leader agent has:
-
-```yaml
-Putin:
-  personality: [strategic, calculating, risk-taker, KGB-mentality]
-  priorities: [regime_survival, great_power_status, NATO_containment]
-  red_lines: [NATO expansion to Ukraine, regime change attempts]
-  negotiation_style: "escalate-to-deescalate, create facts on the ground"
-  memory: remembers past betrayals, holds grudges
-  advisors: military (hawkish), economic, intelligence (paranoid)
-```
-
-Leaders don't just respond — they **think strategically**, consult advisors, recall past events, and act according to their real-world personality patterns.
-
-## 🎯 Pre-Built Scenarios
-
-| Scenario | Description |
-|----------|-------------|
-| **Taiwan Strait Crisis** | China moves on Taiwan. How does the world respond? |
-| **World War III** | NATO-Russia escalation spirals into global conflict |
-| **Global Oil Embargo** | OPEC+ halts exports. Energy crisis engulfs the world |
-| **Ottoman Empire in 2025** | What if the Ottoman Empire never fell? |
-| **AI Singularity Race** | Nations race to achieve artificial superintelligence |
-
-## 🖥️ CLI Interface
-
-```bash
-# Start with defaults
-worldorder start
-
-# Custom scenario
-worldorder start --era contemporary --start-year 2025 --turns 50
-
-# Play as a country
-worldorder start --mode leader --player-country TR
-
-# Use different LLM
-worldorder start --provider groq --model llama-3.1-8b-instant
-
-# View world map
-worldorder map
-
-# Browse history
-worldorder history
-
-# List scenarios
-worldorder scenarios
-
-# Fetch live news
-worldorder news
-```
-
-## 🌐 Web Interface
-
-```bash
-# Start the API server
-cd worldorder
-uvicorn api.server:app --reload
-
-# In another terminal, start the web UI
-cd web
-npm run dev
-```
-
-Then open http://localhost:3000
-
-## 🔌 LLM Providers
-
-| Provider | Cost | Speed | Setup |
-|----------|------|-------|-------|
-| **Ollama** (default) | Free | Local | `ollama pull llama3.1` |
-| **Groq** | Free tier | Very fast | Set `GROQ_API_KEY` |
-| **OpenRouter** | Free models | Fast | Set `OPENROUTER_API_KEY` |
-| **OpenAI** | Paid | Fast | Set `OPENAI_API_KEY` |
-
-## 🐳 Docker
-
-```bash
-docker-compose up
-# API: http://localhost:8000
-# Web: http://localhost:3000
-```
-
-## 📁 Project Structure
+## Architecture
 
 ```
 worldorder/
-├── engine/          # Core simulation engine
-│   ├── world_state.py    # Nation state management
-│   ├── time_engine.py    # Simulation clock
-│   ├── event_bus.py      # Event system
-│   ├── crisis.py         # Crisis generator
-│   └── simulation.py     # Main orchestrator
-├── agents/          # AI agent layer
-│   ├── leader_agent.py   # Leader AI with memory
-│   ├── advisor_agent.py  # Specialized advisors
-│   ├── civilization_dna.py # Cultural DNA
-│   ├── memory.py         # Episodic/semantic memory
-│   └── decision.py       # Decision framework
-├── llm/             # Pluggable LLM backends
-│   ├── ollama.py         # Local (free)
-│   ├── groq.py           # Cloud (free tier)
-│   ├── openrouter.py     # Multi-model
-│   └── openai_provider.py # OpenAI
-├── data/            # Profiles & historical data
-│   ├── profiles/         # 21 country + leader YAML profiles
-│   └── historical/       # Events, wars, treaties
-├── cli/             # Terminal interface (Rich)
-├── api/             # FastAPI REST + WebSocket
-├── web/             # Next.js web interface
-└── docker-compose.yml
+├── app.py                    # FastAPI server + API endpoints
+├── static/index.html         # Cinematic 3D UI (Three.js)
+├── engine/
+│   ├── simulation.py         # Unified simulation loop
+│   ├── war_simulator.py      # Lanchester combat model
+│   ├── shadow_powers.py      # Arms dealers, PMCs, cartels
+│   ├── future_predictor.py   # Threat prediction engine
+│   ├── world_state.py        # Country state management
+│   ├── event_bus.py          # Event pub/sub system
+│   ├── time_engine.py        # Turn/year progression
+│   ├── crisis.py             # Crisis generation
+│   └── config.py             # Simulation configuration
+├── agents/
+│   ├── leader_agent.py       # AI leader with memory + advisors
+│   ├── advisor_agent.py      # 5-role advisor panel
+│   ├── memory.py             # Episodic/semantic memory
+│   ├── decision.py           # Structured decision framework
+│   └── civilization_dna.py   # National cultural identity
+├── llm/
+│   ├── ollama.py             # Ollama provider
+│   ├── prompt_builder.py     # Leader/turn prompt engineering
+│   └── registry.py           # LLM provider registry
+├── data/
+│   ├── world_database.py     # 176 countries raw data
+│   ├── leader_generator.py   # 48 real leaders + dynamic system
+│   └── mass_loader.py        # Country initialization
+└── cli/
+    ├── app.py                # CLI commands
+    └── tui.py                # Terminal UI (Textual)
 ```
 
-## 🤝 Contributing
+## Simulation Loop
 
-This is an open-source project. Contributions welcome:
+Each turn executes this pipeline:
 
-- **Add countries** — Create YAML profiles in `data/profiles/`
-- **Add scenarios** — Extend `data/historical/events.json`
-- **Add LLM providers** — Implement `LLMProvider` interface
-- **Improve leader personalities** — Make them more accurate
-- **Build visualizations** — Charts, maps, timelines
+```
+1. Leader transitions (elections, coups, deaths)
+2. Random crises (oil shocks, pandemics, cyber attacks)
+3. Advance active wars (phase progression, casualties)
+4. Shadow powers tick (arms profits, PMC deployments)
+5. AI leader decisions (memory + advisors + LLM)
+6. Process actions (start wars, publish events)
+7. Economic/population tick
+8. Update predictions
+```
 
-## 📜 License
+## API Endpoints
 
-MIT License — do whatever you want with it.
+| Method | Path | Description |
+|--------|------|-------------|
+| POST | `/api/simulation/start` | Start/reset simulation |
+| POST | `/api/simulation/next-turn` | Advance one turn |
+| GET | `/api/simulation/state` | Full state snapshot |
+| GET | `/api/countries` | All 176 countries ranked |
+| GET | `/api/war/{a}/{b}` | War scenario analysis |
+| POST | `/api/war/start/{a}/{b}` | Start real war |
+| GET | `/api/predictions` | Threat predictions |
+| GET | `/api/shadows` | Shadow powers data |
+| GET | `/api/active-wars` | Active conflicts |
+| POST | `/api/crisis/inject` | Inject custom crisis |
+| POST | `/api/leader/change/{code}` | Force leader change |
+| POST | `/api/alliance/{a}/{b}` | Form/dissolve alliance |
+| POST | `/api/sanction/{s}/{t}` | Apply sanctions |
+| POST | `/api/trade/{a}/{b}` | Trade deal |
+| WS | `/ws` | Live event stream |
 
----
+## LLM Providers
 
-<div align="center">
+WORLD ORDER supports multiple LLM backends:
 
-**Built with obsession by [h4n0m4n](https://github.com/h4n0m4n)**
+| Provider | Model | Speed | Quality |
+|----------|-------|-------|---------|
+| Ollama | qwen2.5:7b | Fast | Good |
+| Ollama | llama3.1:8b | Fast | Good |
+| Groq | mixtral-8x7b | Very Fast | Great |
+| OpenRouter | Any model | Varies | Varies |
 
-*"The supreme art of war is to subdue the enemy without fighting."* — Sun Tzu
+## License
 
-⭐ Star this repo if you want to simulate the apocalypse responsibly.
-
-</div>
+MIT

@@ -44,6 +44,7 @@ class SimulationConfig(BaseModel):
     llm_provider: str = "ollama"
     llm_model: str = "llama3.1"
     seed: int | None = None
+    top_n_leaders: int = 8
     extra: dict[str, Any] = Field(default_factory=dict)
 
     def turns_label(self) -> str:

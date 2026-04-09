@@ -258,6 +258,64 @@ async def force_leader_change(country_code: str, reason: str = "coup"):
     return {"error": "No leader system"}
 
 
+@app.post("/api/alliance/{country1}/{country2}")
+async def toggle_alliance(country1: str, country2: str, alliance_name: str = "bilateral"):
+    sim = _ensure_sim()
+    c1, c2 = sim.world.get(country1.upper()), sim.world.get(country2.upper())
+    if not c1 or not c2:
+        return {"error": "Country not found"}
+    if alliance_name in c1.alliances and alliance_name in c2.alliances:
+        c1.alliances.remove(alliance_name)
+        c2.alliances.remove(alliance_name)
+        action = "dissolved"
+    else:
+        if alliance_name not in c1.alliances:
+            c1.alliances.append(alliance_name)
+        if alliance_name not in c2.alliances:
+            c2.alliances.append(alliance_name)
+        action = "formed"
+    c1.relations[country2.upper()] = RelationType.ALLIED
+    c2.relations[country1.upper()] = RelationType.ALLIED
+    await _broadcast({"type": "alliance", "c1": country1.upper(), "c2": country2.upper(), "action": action})
+    return {"status": "ok", "action": action, "alliance": alliance_name}
+
+
+@app.post("/api/sanction/{source}/{target}")
+async def apply_sanction(source: str, target: str):
+    sim = _ensure_sim()
+    s, t = sim.world.get(source.upper()), sim.world.get(target.upper())
+    if not s or not t:
+        return {"error": "Country not found"}
+    t.economy.sanctions_pressure = min(1.0, t.economy.sanctions_pressure + 0.15)
+    t.economy.gdp_growth -= 1.0
+    t.economy.inflation += 2.0
+    t.domestic.stability = max(0.05, t.domestic.stability - 0.05)
+    s.relations[target.upper()] = RelationType.HOSTILE
+    t.relations[source.upper()] = RelationType.HOSTILE
+    evasion = sim.shadow_powers.apply_sanctions_effect(target.upper())
+    await _broadcast({"type": "sanction", "source": source.upper(), "target": target.upper()})
+    return {"status": "ok", "sanctions_pressure": t.economy.sanctions_pressure, "evasion": evasion}
+
+
+@app.post("/api/trade/{country1}/{country2}")
+async def trade_deal(country1: str, country2: str):
+    sim = _ensure_sim()
+    c1, c2 = sim.world.get(country1.upper()), sim.world.get(country2.upper())
+    if not c1 or not c2:
+        return {"error": "Country not found"}
+    boost = min(0.5, (c1.economy.gdp_trillion + c2.economy.gdp_trillion) * 0.01)
+    c1.economy.gdp_growth += boost
+    c2.economy.gdp_growth += boost
+    c1.economy.trade_balance += boost * 10
+    c2.economy.trade_balance += boost * 10
+    if c1.relation_with(country2.upper()) in (RelationType.NEUTRAL, RelationType.TENSE):
+        c1.relations[country2.upper()] = RelationType.FRIENDLY
+    if c2.relation_with(country1.upper()) in (RelationType.NEUTRAL, RelationType.TENSE):
+        c2.relations[country1.upper()] = RelationType.FRIENDLY
+    await _broadcast({"type": "trade", "c1": country1.upper(), "c2": country2.upper()})
+    return {"status": "ok", "gdp_boost": boost}
+
+
 # ═══════════════════════════════════════════════════════════════
 # WEBSOCKET
 # ═══════════════════════════════════════════════════════════════
